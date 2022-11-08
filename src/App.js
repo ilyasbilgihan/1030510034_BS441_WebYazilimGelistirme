@@ -17,7 +17,7 @@ function App() {
           </div>
         )
       }
-      <Game gameMode={gameMode} />
+      <Game gameMode={gameMode} setGameMode={setGameMode} />
     </div>
   );
 }
