@@ -1,14 +1,14 @@
 
 
 
-export default function Player({ name, move, reversed }){
+export default function Player({ name, move, suffix = "" }){
 
   return (
     <div>
       <h5>{name}</h5>
       {
         move ?
-          (<img src={`/${move + (reversed ? "-r":"")}.png`}></img>)
+          (<img src={`/${move + suffix}.png`}></img>)
           : <span>?</span>
       }
     </div>

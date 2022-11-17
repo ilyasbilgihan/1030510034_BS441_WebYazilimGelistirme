@@ -127,8 +127,8 @@ export default function Game({ gameMode, setGameMode }) {
       <div style={{display:"flex", alignItems: "center", textAlign:"center", gap:"100px", justifyContent: "center"}}>
         <Player name="You" move={moves[0]}/>
         <div>
-          <Player name="Computer 1" move={moves[1]} reversed/>
-          {gameMode == "1v1v1" && (<Player name="Computer 2" move={moves[2]} reversed/>)}
+          <Player name="Computer 1" move={moves[1]} suffix="-r"/>
+          {gameMode == "1v1v1" && (<Player name="Computer 2" move={moves[2]} suffix="-r"/>)}
         </div>
         {
           victory.length != 0 && (
