@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Player from "./Player";
 
 const PLAYERS = ["You", "Computer 1", "Computer 2"]
@@ -13,6 +13,10 @@ export default function Game({ gameMode, setGameMode }) {
   const [victory, setVictory] = useState([])
 
   const handleRound = (move) =>{
+
+    if(victory.length != 0){
+      return
+    }
     
     const opts = ["rock", "paper", "scissors"];
     
