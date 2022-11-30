@@ -145,7 +145,7 @@ export default function Game({ gameMode, setGameMode }) {
                 )
               }
               <div>
-                <button onClick={resetGame}>Play again</button>
+                <button onClick={resetGame}>Restart Game</button>
               </div>
             </>
           )
